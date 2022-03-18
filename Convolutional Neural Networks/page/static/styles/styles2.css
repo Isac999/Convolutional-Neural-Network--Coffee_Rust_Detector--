@@ -1,0 +1,45 @@
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-size: cover;
+  	margin: 2%;
+  	color: white;
+  	font-family: sans-serif;
+  	text-align: center;
+  	font-size: 20px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+}
+#space {
+	background-color: #212a27d1;
+	padding: 1%;
+	border-radius: 11px;
+	margin: 0%;
+}
+#logosvg {
+    max-width: 10%;
+    max-height: 10%;
+    width: auto;
+    height: auto;
+    margin: 1%;
+}
+#title_coffee {
+	font-size: 200%;
+	color: #8ff55b;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+#github {
+	font-size: 60%;
+	color: #8ff55b;
+}
+.title {
+	background-color: #00000085;
+	border-radius: 6px;
+	padding: 8px;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+.align_ {
+	text-align: left;
+}

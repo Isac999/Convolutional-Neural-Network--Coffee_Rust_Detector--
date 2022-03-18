@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coffee Rust Detector </title>
+    <!-- <link rel="stylesheet" type="text/css" href="C:/Users/isacc/Desktop/CNN/page/static/styles/styles.css" media="screen"/> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}"
+
+</head>
+<body background="{{ url_for('static',filename='/img/agro.jpg') }}">
+    <div id='space'>
+        <header>
+                <img src="{{ url_for('static',filename='/img/simbolo.svg') }}" id='logosvg'> 
+                <h2 id='title_coffee'> 
+                    Coffee Rust Detector <br>
+                    <a href="https://github.com/Isac999" id='github' target="_blank"> Meu repositório </a> 
+                </h2>
+                <img src="{{ url_for('static',filename='/img/simboloo.png') }}" id='logosvg'>
+        </header>
+        <main>
+            <div>
+                <h3 class='title'> Objetivo do Projeto: </h3>
+                <p class="align_">
+                    Construir um modelo em Python que seja capaz de predizer se a folha do café está com a doença da ferrugem (Hemileia Vastatrix) ou saudável. Para isso, utilizei da tecnologia de Deep Learning chamada Redes Neurais Convolucionais (CNN), realizando treinos e testes para a obtenção do melhor modelo. O projeto foi desenvolvido com a linguagem de programação Python e suas respectivas bibliotecas: Tensorflow, Keras, Matplotlib, Flask, Os, Pillow e Numpy. No total foram usadas 16.670 imagens, sendo 11.670 imagens para treino e 5.000 imagens para teste. O resultado foi de uma acurácia de 100% logo no primeiro teste da primeira época.
+                </p>
+            </div>
+            <div id='div_center'>
+                <fieldset id='fieldset'>
+                    <legend>
+                        <h3 id='legend'> Teste você mesmo: </h3> 
+                    </legend>
+                    <form action="response.html" method="POST" enctype= multipart/form-data>                        
+                        <input class='button1' type="file" name="file"> <br>
+                        <button class='button2' type="submit" name='submit'>Enviar</button>
+                    </form>    
+                </fieldset>
+                <br>
+            </div>
+            <div>
+                <h3 class='title'> ATENÇÃO: </h3>
+                <p class="align_"> O modelo trabalha com predições de imagens com tamanho de 128x128 pixels, então caso a imagem upada seja maior que isso o modelo fará um recorte na imagem. Caso a imagem tenha um tamanho muito grande, é recomendado que a imagem seja upada já recortada com foco na ferrugem. Caso não seja feito o próprio modelo fará o recorte da imagem de forma centralizada para o tamanho de 128x128 pixels.</p>
+            </div>
+        </main>
+        <br>
+        <br>
+        <footer>
+            <p style="text-align: right;"> &copy Autor: Isac Fernandes</p>
+        </footer>
+    </div>
+</body>
+</html>

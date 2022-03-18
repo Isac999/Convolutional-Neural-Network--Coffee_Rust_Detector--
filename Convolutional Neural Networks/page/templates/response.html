@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Response Page </title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles2.css') }}">
+</head>
+<body background="{{ url_for('static',filename='/img/agro.jpg') }}">
+    <div id='space'>
+        <header>
+                <img src="{{ url_for('static',filename='/img/simbolo.svg') }}" id='logosvg'> 
+                <h2 id='title_coffee'> 
+                    Coffee Rust Detector <br>
+                    <a href="https://github.com/Isac999" id='github' target="_blank"> Meu repositório </a> 
+                </h2>
+                <img src="{{ url_for('static',filename='/img/simboloo.png') }}" id='logosvg'>
+        </header>
+        <main>
+            <div>
+                <h3 class='title'> Predição do Modelo: </h3>
+                <h3 style="color: {{ color }}; font-size: 40px; color: white; text-shadow: black 0.1em 0.1em 0.2em"> {{ result }} </h3> 
+                <p style="text-align: left"> 
+                	Sobre: {{ text_info }} <br>
+                	{{ danos }} <br>
+                	{{ controle }} <br>
+                	{{ real_value }} <br>
+               	</p>
+               	<a href="http://127.0.0.1:5000/" style="color: green; text-align: center;"> Clique aqui para voltar </a>
+            </div>
+        </main>
+        <footer>
+            <p style="text-align: right;"> &copy Autor: Isac Fernandes</p>
+        </footer>
+    </div>
+</body>
+</html>
